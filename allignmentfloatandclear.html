@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allignment</title>
+    <style>
+             * {
+            box-sizing: border-box;
+        } 
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            border: 3px solid black;
+            width: 900px;
+            background-color: rosybrown;
+            margin: 33px auto;
+        }
+        .item{
+             border: 3px solid black;
+             background-color: silver;
+             padding:12px 3px;
+             margin: 12px 3px;
+        }
+        #fruit{
+            float:left;
+            width:441px;
+        
+            
+            
+        }
+        #computer{
+            float:right;
+            width:441px;
+           
+        }
+        #stationary{
+            clear: both;
+            
+            width: 100%;
+        }
+        p, h3 {
+         
+            text-align: center; 
+          
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 370px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, cumque.
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="secondpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, cumque.
+            </p>
+        </div>
+    
+    <div id="stationary" class="item">
+        <h3>stationary</h3>
+        <p id="thirdpara" class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, cumque.
+        </p>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

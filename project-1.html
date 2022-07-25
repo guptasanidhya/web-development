@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <style>
+body{
+    font-family: cursive;
+     background:url('Transform\ Scale\ and\ Align.jpg');
+     background-size: cover;
+     height: 2000px;
+    margin:0px;
+    padding:0px;
+}
+.left{
+    display: inline-block;
+    /* border:3px solid black; */
+    position:absolute;
+   left:47px;
+   top:4px;
+}
+.left img{
+    width: 136px;
+    padding-top:10px;
+    padding-left:50px;
+  
+
+}
+.left div{
+    text-align:center;
+  line-height:19px;
+    font-size:26px;
+}
+.mid{
+    /* border:0px solid; */
+    display: block;
+    width:50%;
+  margin:29px auto;
+  margin-top: 94px;
+}
+.right{
+    /* border:3px solid black; */
+    position:absolute;
+    right:15px;
+    top:20px;
+}
+.navbar li{
+    display:inline-block;
+  font-size:23px;
+    /* margin:auto; */
+    }
+    .navbar li a{
+        text-decoration:none;
+        list-style:none;
+        padding:34px 18px;
+        color:white;
+       
+    }
+    .navbar li a:hover, .navbar li a .home{
+        color: black;
+        cursor: pointer;
+
+    }
+    .btn{
+        display:inline-block;
+        font-family: cursive;
+        font-size: 20px;
+        background-color: black;
+        border-radius: 5px;
+        color:white;
+        cursor:pointer;
+        padding: 14px 20px;
+         margin:0px 10px;
+         margin-top:60px;
+         
+    margin-right: 0px;
+    padding-right: 29px;
+    padding-left: 35px;
+
+    }
+    .container{
+        border:3px solid black;
+        margin:106px 70px;
+        padding: 75px;
+        width:25%;
+        border-radius:28px;
+        float:left;
+    }
+    </style>
+</head>
+<body>
+  <header class="header">
+      <div class="left">
+          <img src="donut.png">
+          <div>Sanidhya's Bakery</div>
+      </div>
+      <div class="mid">
+          <ul class="navbar">
+          <li><a href="#" class="home">Home</a></li>
+          <li><a href="#">Parler</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About us</a></li>
+      </ul></div>
+      <div class="right">
+          <button class="btn">Cart</button>
+          <button class="btn">Orders</button>
+      </div>
+  </header>
+  <div class="container">
+      <h1>Items Available</h1>
+      <ul>
+          <li>Cakes</li>
+          <li>Pastry</li>
+          <li>Choclates</li>
+          <li>Cream Rolls</li>
+          <button class="btn">More Items</button>
+      </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance selectors</title>
+    <style>
+        h1{text-align: center;}
+        div li p{
+            background-color: blue;
+color: white;
+        }
+        div>p{color:yellow;
+         background-color: springgreen;
+        }
+        div+p{color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>there is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+                <p>this is para inside ul</p>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

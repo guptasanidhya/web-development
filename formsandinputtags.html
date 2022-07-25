@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Eligibility form</h2>
+    <form action="backend.php" method="POST">
+        <div>
+            <label for="name">Name</label>
+        </div>
+        <div>
+            <input type="text" name="username" id="name" autofocus placeholder="enter your full name">
+
+        </div><br>
+        <div>
+            role:<input type="text" name="userrole" readonly>
+
+        </div><br>
+        <div>
+            Email:<input type="email" name="useremail" required>
+
+        </div><br>
+        <div>
+            Date of birth:<input type="date" name="dob">
+
+        </div><br>
+        <div>
+            mobile number: <input type="tel" name="telephone number">
+
+        </div><br>
+        <div>
+            bonus:<input type="number" name="userbonus">
+
+        </div><br>
+        <div>
+            Are you eligible?:<input type="checkbox" name="user Eligibility" >
+
+        </div><br>
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <div>
+            gender:male<input type="radio" name="gender">
+            female<input type="radio" name="gender">
+            other<input type="radio" name="gender">
+
+        </div><br>
+        <div>
+            write about yourself:<br><textarea name="text" cols="90" rows="10"></textarea>
+        </div><br>
+        <div>
+            <label for="car">car</label>
+            <select name="usercar" id="Car">
+                <option value="indica">indica</option>
+                <option value="Swift">Swift</option>
+            </select>
+        </div><br>
+        <div>
+            range:<input type="range" name="range">
+
+        </div><br>
+        <div>
+            time: <input type="time" name="time">
+
+        </div><br>
+        <div>
+            color pick:<input type="color" name="uicolor">
+        </div><br>
+        <div>
+            Photo:<input type="file" name="photofile" multiple >
+        </div><br>
+        <div>
+            no. of persons<input type="number" name="persons count" min="1" max="10">
+
+        </div><br>
+        <div>
+           Audio: <input type="file" accept="audio/*"> 
+        </div><br>
+        <div>
+            <input type="button" value="go to next page">
+
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </div><br>
+
+    </form>
+
+</body>
+
+</html>

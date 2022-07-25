@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid with media queries</title>
+    <style> .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            
+            'footer footer footer footer';}
+            .bdr{
+                border:2px solid black;
+                padding:10px 23px;
+                background-color: wheat;
+            }
+
+            @media only screen and (max-width:300px)
+            {
+                body{
+                    background-color: tomato;
+                }
+                .container {
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';}
+            span{
+                display: block;
+                text-align:center;
+            } 
+        
+            }
+            @media only screen and (min-width:800px)
+            {
+                body{
+                    background-color: teal;
+                }
+            }
+             nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+            </style>
+</head>
+<body>
+  <div class="container">
+      <nav class="bdr">
+          <span>home</span>
+          <span>services</span>
+          <span>about us</span>
+          <span>contact us</span>
+      </nav>
+      <section class="bdr">
+          <h2>learn CSS</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, numquam fuga magnam nobis odit laborum ut dolores nostrum iure quia tempora. Quos molestias dolore nobis nihil alias non nesciunt ipsam facere, dolorum est fugiat error deserunt dolor veniam expedita optio sint rem ex necessitatibus quia, dignissimos molestiae eaque iste! Mollitia laborum sint nisi ipsum eaque, omnis architecto corrupti iusto, praesentium sunt ratione? Totam, veniam! Veniam autem iure rerum eveniet expedita natus nobis aspernatur sunt laborum quo totam asperiores dignissimos deleniti tenetur aliquam voluptates quidem obcaecati similique laudantium laboriosam quis iusto mollitia, cupiditate ducimus. Omnis doloremque dolores incidunt sequi eum quibusdam fugiat, distinctio alias laboriosam dignissimos aliquid ducimus dolor? Ab at inventore deleniti quidem reiciendis, architecto iure facilis exercitationem fugiat eligendi sapiente tempora ullam voluptas, voluptates aliquam id dolore similique provident omnis! Dolor aspernatur maiores architecto unde laudantium nihil maxime iste laboriosam, voluptate sapiente nulla possimus dolorem omnis expedita reiciendis. Ea voluptatem vero sint. Ea obcaecati officia sed quae reprehenderit, odit rem, illo distinctio accusamus nesciunt aliquam sunt at! Magnam sit beatae ex numquam optio. Non, consectetur blanditiis possimus dolores, sit omnis porro, at ex enim dolorem quaerat fugit perspiciatis illum error ut mollitia necessitatibus sint. Voluptatem atque possimus est obcaecati eum quaerat itaque repellendus, iure sed qui quo alias harum in delectus optio dignissimos minima amet laboriosam ratione beatae ut. Ab facere minima numquam consectetur distinctio consequatur unde debitis minus cum exercitationem. Tempore beatae debitis, est voluptate quidem temporibus, voluptatem delectus quisquam inventore eveniet omnis vero veritatis tempora facilis similique hic! Inventore doloribus error corporis, fugiat laborum dolorem expedita. Minus tempora dicta ex recusandae asperiores dolore quod tempore sit? Iusto similique, ullam amet tempora voluptatem dolor obcaecati? Similique natus exercitationem doloremque non asperiores vel? Ipsa perspiciatis sapiente repudiandae quidem nostrum. Iusto obcaecati eos dicta, possimus dolorem sit libero error soluta sequi temporibus molestias aliquam eius quaerat odio, optio maiores natus doloribus assumenda fuga est quasi eveniet. Inventore asperiores blanditiis ratione voluptatibus incidunt consectetur voluptates aspernatur excepturi eligendi veniam nostrum molestiae, impedit numquam fugit! Sint temporibus voluptatibus aut illo neque eius reiciendis labore, cupiditate distinctio nihil architecto suscipit dignissimos repellat numquam porro illum sapiente omnis ea ullam eaque ipsam dolor? Expedita minima blanditiis quos, molestias corrupti veritatis, placeat nihil fuga iusto, animi harum tenetur? Odio laborum dignissimos, quae harum reiciendis vitae accusantium, ullam aut architecto necessitatibus aspernatur voluptas asperiores, dolorem sint dolore exercitationem perspiciatis. Porro excepturi, placeat provident quisquam illo accusamus!</p>
+      </section>
+      <aside class="bdr">
+          <h1>more about us</h1>
+      </aside>
+<footer class="bdr">Copyrigt &copy all rights reserved</footer>
+  </div> 
+
+</body>
+</html>

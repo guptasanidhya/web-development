@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style 
+         include ../static/style.css
+
+block content
+     
+     section#introSection
+                div Welcome to Sanidhya Dance Academy
+                div.small Eat Dance Sleep Repeat
+     section#missionSection
+                h2 Our Mission
+                div.card
+                    h3 Dance Perfection
+                    div.card-box
+                       div.card-img  
+                         img(src="/static/img/1.png")
+                       div.card-content
+                        p This is the best dance academy
+                div.card
+                    h3 Embeeding Culture
+                    div.card-box
+                      div.card-img  
+                         img(src="/static/img/2.png")
+                      div.card-content
+                        p This is the best dance academy
+                div.card
+                    h3 Health Consciousness
+                    div.card-box
+                        div.card-img  
+                            img(src="/static/img/3.png")
+                        div.card-content
+                        p This is the best dance academy
+
+     section#sponsorsSection
+          h2 our Sponsors
+          div#sponsors
+                    img(src="/static/img/logo1.png",alt="Sponsors Image", Class="spImage")
+                    img(src="/static/img/logo2.png",alt="Sponsors Image", Class="spImage")
+                    img(src="/static/img/logo3.png",alt="Sponsors Image", Class="spImage")
+                    img(src="/static/img/logo4.png",alt="Sponsors Image", Class="spImage")

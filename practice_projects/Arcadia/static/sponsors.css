@@ -1,0 +1,24 @@
+#Sponsors{
+    /* background-color: rgb(179, 135, 135); */
+    height:300px;
+    /* background: url('/static/bg.jpg') center/cover no-repeat; */
+}
+
+#Sponsors h2{
+    font-size: 36px;
+    /* font-family: cursive; */
+    text-align: center;
+    padding-top: 12px;
+    color:white;
+    
+}
+#sponsors{
+    height: 191px;
+    max-width: 780px;
+    margin: auto;
+}
+
+.spImage{
+    height: 80%;
+    margin: 20px;
+}

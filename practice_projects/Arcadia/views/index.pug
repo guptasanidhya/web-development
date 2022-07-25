@@ -1,0 +1,51 @@
+doctype html
+html
+     head
+        title Arcadia
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css')
+        style
+             include ../static/index.css
+             include ../static/mission.css
+             include ../static/services.css
+             include ../static/sponsors.css
+             include ../static/contact.css
+             include ../static/aboutus.css
+     body
+         nav#navbar
+             ul
+                div#logo
+                     img(src="/static/img/logo.png")
+                     |ARCADIA
+                li #[a(href="/") Home] 
+                li #[a(href="#missionSection") Mission] 
+                li #[a(href="#Services") Services] 
+                li #[a(href="#Contact") Contact Us] 
+                li #[a(href="#aboutus") About Us] 
+         section#introSection    
+             div WELCOME TO ARCADIA
+             div.small Eat Sleep Explore Repeat
+             div.para
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sunt dicta sed voluptatibus!
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequunt tenetur!
+                p Lorem ipsum dolor sit amet!
+                button.button 
+                 a(href="#") Read More
+         section#missionSection
+            include mission.pug
+         section#Services
+            include services.pug
+         section#Sponsors
+             h2 Our Sponsors
+             div.border
+             div#sponsors
+                    img(src="/static/img/logo1.png",alt="Sponsors Image", Class="spImage")
+                    img(src="/static/img/logo2.png",alt="Sponsors Image", Class="spImage")
+                    img(src="/static/img/logo3.png",alt="Sponsors Image", Class="spImage")
+                    img(src="/static/img/logo2.png",alt="Sponsors Image", Class="spImage")
+         section#Contact
+            include contact-form.pug
+         section#aboutus
+            include aboutus.pug
+         footer#footer
+             | Copyright 2022 arcadia.com | All rights reserved
+             

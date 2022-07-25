@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+#navbar{
+    padding:5px;
+    background-color:black;
+    position:sticky;
+    top:0;
+}
+#navbar ul{
+    display:flex;
+    align-items:center;
+    justify-content:left;
+}
+#navbar li{
+    list-style:none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 31px;
+    color: white;
+    font-size: 25px
+}
+#navbar li a:hover{color:grey;
+
+}
+#logo{
+    display:flex;
+    color:white;
+    align-items:center;
+    margin:5px;
+    font-size:31px;
+    margin-right:160px;
+    font-family: 'Metamorphous', cursive;
+    
+}
+#logo img{
+    height: 60px;
+    filter: invert(1);
+    margin-bottom: 4px;
+}
+
+#introSection{
+    display:flex;
+    flex-direction:column;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items:center;
+    background: url('/static/bg.jpg') center/cover no-repeat;
+    color:white;
+    height:490px;
+    margin: 50px;
+    font-size: 55px;
+    /* opacity:0.6; */
+}
+#introSection div.small{
+    font-size: 42px;
+    padding: 5px;
+}
+.para{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.button{
+        background: aqua;
+        padding: 10px 16PX;
+        margin-top: 30px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 15px;
+        /* outline: none; */
+        border: none;
+}
+.button a{
+    color:white;
+    text-decoration: none;
+    list-style: none;
+}
+
+#footer{
+        background-color: black;
+        height: 40px;
+        color:white;
+        text-align:center;
+        padding-top:11px;
+}

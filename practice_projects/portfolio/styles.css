@@ -1,0 +1,33 @@
+.container{display:grid;
+    /* grid-template-areas: 
+    "mission mission vision"
+    "market core core"
+    "market history history"; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 0.33fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(5,1fr); */
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 80vh;
+    margin: 0px;
+    padding:75px 280px;
+}
+
+#box1{  
+    /* row-start,column-start,row-end,column-end */
+    grid-area:1 / 1 / 2 / 4;
+     padding: 1.2em;
+    background: #F5C26B;}
+#box2{grid-area:1 / 4 / 2 / 6;
+    padding: 1.2em;
+    background: #00BDA5;}
+#box3{grid-area:2 / 1 / 4 / 3;
+    padding: 1.2em;
+    background: #EAF0F6;}
+#box4{grid-area:2 / 3 / 3 / 6;
+    padding: 1.2em;
+    background: #FFFFFF;}
+#box5{grid-area:3 / 3 / 4 / 6;
+    padding: 1.2em;
+    background: #FF7A59;}
